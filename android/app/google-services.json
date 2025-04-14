@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1056420885975",
+    "project_id": "medi-4d034",
+    "storage_bucket": "medi-4d034.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056420885975:android:0c0c3e34a281e1ce400792",
+        "android_client_info": {
+          "package_name": "com.example.medi_flow_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056420885975-u6a8obou1gd2c663ptrd3vjt89hfk2kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medi_flow_new",
+            "certificate_hash": "ca1349b1c4fb7563ead0e3cd4791e484a7a168e2"
+          }
+        },
+        {
+          "client_id": "1056420885975-5aau4e55ci5iie6l80ntbkhqdfk9u098.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN1BFVFySywtUxTcy69wAIoxu5h2Y2G3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056420885975-5aau4e55ci5iie6l80ntbkhqdfk9u098.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

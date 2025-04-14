@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/firebase_options.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1744487099402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1744487099402,
+            "name": "Commit-0",
+            "content": "import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;\r\nimport 'package:flutter/foundation.dart'\r\n    show defaultTargetPlatform, kIsWeb, TargetPlatform;\r\n\r\nclass DefaultFirebaseOptions {\r\n  static FirebaseOptions get currentPlatform {\r\n    if (kIsWeb) {\r\n      throw UnsupportedError(\r\n        'DefaultFirebaseOptions have not been configured for web - '\r\n        'you can reconfigure this by running the FlutterFire CLI again.',\r\n      );\r\n    }\r\n    switch (defaultTargetPlatform) {\r\n      case TargetPlatform.android:\r\n        return android;\r\n      case TargetPlatform.iOS:\r\n        throw UnsupportedError(\r\n          'DefaultFirebaseOptions have not been configured for ios - '\r\n          'you can reconfigure this by running the FlutterFire CLI again.',\r\n        );\r\n      case TargetPlatform.macOS:\r\n        throw UnsupportedError(\r\n          'DefaultFirebaseOptions have not been configured for macos - '\r\n          'you can reconfigure this by running the FlutterFire CLI again.',\r\n        );\r\n      case TargetPlatform.windows:\r\n        throw UnsupportedError(\r\n          'DefaultFirebaseOptions have not been configured for windows - '\r\n          'you can reconfigure this by running the FlutterFire CLI again.',\r\n        );\r\n      case TargetPlatform.linux:\r\n        throw UnsupportedError(\r\n          'DefaultFirebaseOptions have not been configured for linux - '\r\n          'you can reconfigure this by running the FlutterFire CLI again.',\r\n        );\r\n      default:\r\n        throw UnsupportedError(\r\n          'DefaultFirebaseOptions are not supported for this platform.',\r\n        );\r\n    }\r\n  }\r\n\r\n  static const FirebaseOptions android = FirebaseOptions(\r\n    apiKey: 'AIzaSyDN1BFVFySywtUxTcy69wAIoxu5h2Y2G3s',\r\n    appId: '1:1056420885975:android:0c0c3e34a281e1ce400792',\r\n    messagingSenderId: '1056420885975',\r\n    projectId: 'medi-4d034',\r\n    storageBucket: 'medi-4d034.firebasestorage.app',\r\n  );\r\n} "
+        }
+    ]
+}

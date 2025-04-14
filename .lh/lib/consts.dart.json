@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/consts.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1744534325784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1744544688840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const String Gemini_API_Key=\"AIzaSyBAV4gKrbLzEHXRihlrROsioyAircvg26A\";\n\\ No newline at end of file\n+const String Gemini_API_Key=\"AIzaSyBu6wd14ivNAm9BggscO3LnzVZgKEdxhX4\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1744545060561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const String Gemini_API_Key=\"AIzaSyBu6wd14ivNAm9BggscO3LnzVZgKEdxhX4\";\n\\ No newline at end of file\n+const String Gemini_API_Key=\"AIzaSyBAV4gKrbLzEHXRihlrROsioyAircvg26A\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1744546110380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const String Gemini_API_Key=\"AIzaSyBAV4gKrbLzEHXRihlrROsioyAircvg26A\";\n\\ No newline at end of file\n+const String Gemini_API_Key=\"AIzaSyCcrDqdZsv-aExddRmxENSgCE8lBundBsA\";\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1744534325784,
+            "name": "Commit-0",
+            "content": "const String Gemini_API_Key=\"AIzaSyBAV4gKrbLzEHXRihlrROsioyAircvg26A\";"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "android/app/build.gradle",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1744628455372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1744628590871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,44 +1,1 @@\n-android {\r\n-    namespace \"com.example.medi_flow_new\"\r\n-    compileSdkVersion flutter.compileSdkVersion\r\n-    ndkVersion flutter.ndkVersion\r\n-\r\n-    compileOptions {\r\n-        sourceCompatibility JavaVersion.VERSION_11\r\n-        targetCompatibility JavaVersion.VERSION_11\r\n-    }\r\n-\r\n-    kotlinOptions {\r\n-        jvmTarget = '11'\r\n-    }\r\n-\r\n-    sourceSets {\r\n-        main.java.srcDirs += 'src/main/kotlin'\r\n-    }\r\n-\r\n-    defaultConfig {\r\n-        applicationId \"com.example.medi_flow_new\"\r\n-        minSdkVersion flutter.minSdkVersion\r\n-        targetSdkVersion flutter.targetSdkVersion\r\n-        versionCode flutterVersionCode.toInteger()\r\n-        versionName flutterVersionName\r\n-        multiDexEnabled true\r\n-    }\r\n-\r\n-    buildTypes {\r\n-        release {\r\n-            signingConfig signingConfigs.debug\r\n-            minifyEnabled true\r\n-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'\r\n-        }\r\n-        debug {\r\n-            minifyEnabled false\r\n-        }\r\n-    }\r\n-\r\n-    dexOptions {\r\n-        preDexLibraries true\r\n-        maxProcessCount 8\r\n-        javaMaxHeapSize \"4g\"\r\n-    }\r\n-} \n\\ No newline at end of file\n+ \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1744628455372,
+            "name": "Commit-0",
+            "content": "android {\r\n    namespace \"com.example.medi_flow_new\"\r\n    compileSdkVersion flutter.compileSdkVersion\r\n    ndkVersion flutter.ndkVersion\r\n\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_11\r\n        targetCompatibility JavaVersion.VERSION_11\r\n    }\r\n\r\n    kotlinOptions {\r\n        jvmTarget = '11'\r\n    }\r\n\r\n    sourceSets {\r\n        main.java.srcDirs += 'src/main/kotlin'\r\n    }\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.medi_flow_new\"\r\n        minSdkVersion flutter.minSdkVersion\r\n        targetSdkVersion flutter.targetSdkVersion\r\n        versionCode flutterVersionCode.toInteger()\r\n        versionName flutterVersionName\r\n        multiDexEnabled true\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            signingConfig signingConfigs.debug\r\n            minifyEnabled true\r\n            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'\r\n        }\r\n        debug {\r\n            minifyEnabled false\r\n        }\r\n    }\r\n\r\n    dexOptions {\r\n        preDexLibraries true\r\n        maxProcessCount 8\r\n        javaMaxHeapSize \"4g\"\r\n    }\r\n} "
+        }
+    ]
+}

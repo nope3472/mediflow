@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/functions/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1744625213722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1744625213722,
+            "name": "Commit-0",
+            "content": "exports.getAllUserEmails = functions.https.onCall(async (data, context) => {\r\n    const userEmails = [];\r\n    let nextPageToken;\r\n    do {\r\n      const result = await admin.auth().listUsers(1000, nextPageToken);\r\n      result.users.forEach((user) => {\r\n        if (user.email) userEmails.push(user.email);\r\n      });\r\n      nextPageToken = result.pageToken;\r\n    } while (nextPageToken);\r\n  \r\n    return userEmails;\r\n  });\r\n  "
+        }
+    ]
+}
