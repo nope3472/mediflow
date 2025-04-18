@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'dart:convert';
 
 class VideoConsultation extends StatefulWidget {
   const VideoConsultation({super.key});
@@ -91,11 +92,27 @@ class _VideoConsultationState extends State<VideoConsultation> {
       bookedSlots.add('${_selectedDay.toIso8601String()}|$_selectedTime');
       await _prefs.setStringList('booked_slots', bookedSlots);
 
+      // Save the appointment notification
+      final notificationsJson = _prefs.getString('notifications') ?? '[]';
+      final List<dynamic> notifications = jsonDecode(notificationsJson);
+
+      final notification = {
+        'type': 'video_consultation',
+        'title': 'Video Consultation Booked',
+        'doctorName': 'Dr. Sarah Johnson',
+        'specialization': 'General Physician',
+        'dateTime': '${_selectedDay.toIso8601String()}|$_selectedTime',
+        'createdAt': DateTime.now().toIso8601String(),
+      };
+
+      notifications.insert(0, notification);
+      await _prefs.setString('notifications', jsonEncode(notifications));
+
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              'Appointment booked for ${DateFormat('MMM d, y').format(_selectedDay)} at $_selectedTime',
+              'Appointment booked for ${DateFormat('MMM d, y').format(_selectedDay)} at $_selectedTime. You will be notified when the doctor confirms.',
             ),
             backgroundColor: Colors.green,
           ),
@@ -242,8 +259,8 @@ class _VideoConsultationState extends State<VideoConsultation> {
                         });
                       },
                       calendarStyle: CalendarStyle(
-                        selectedDecoration: BoxDecoration(
-                          color: const Color(0xFF2D9CDB),
+                        selectedDecoration: const BoxDecoration(
+                          color: Color(0xFF2D9CDB),
                           shape: BoxShape.circle,
                         ),
                         todayDecoration: BoxDecoration(
